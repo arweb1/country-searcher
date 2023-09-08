@@ -1,6 +1,6 @@
 import { SET_THEME } from "./theme-actions";
 
-const themeReducer = (state = 'light', {type, payload}) => {
+export const themeReducer = (state = 'light', {type, payload}) => {
     switch (type) {
         case SET_THEME:
             return payload
@@ -8,5 +8,3 @@ const themeReducer = (state = 'light', {type, payload}) => {
             return state
     }
 }
-
-export default themeReducer;
